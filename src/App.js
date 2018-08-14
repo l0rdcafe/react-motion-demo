@@ -121,8 +121,8 @@ class App extends Component {
   };
   willLeave = styleCell => ({
     ...styleCell.style,
-    opacity: spring(0, this.state.config),
-    scale: spring(2, this.state.config)
+    opacity: spring(0, this.state.configRipple),
+    scale: spring(2, this.state.configRipple)
   });
   render() {
     const {
